@@ -1,0 +1,82 @@
+/* Location.css */
+
+.route-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+  }
+  
+  .map-container {
+    width: 100%;
+    height: 70%;
+  }
+  
+  .info-container {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+    font-size: larger;
+    width: 80%; /* Adjust width as needed */
+  }
+  
+  .details-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .details-container p {
+    margin: 0;
+    white-space: nowrap; /* Prevent line break */
+  }
+  
+  .distance {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+  }
+  
+  .duration {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .compare-button {
+    padding: 10px 20px;
+    height: 40px;
+    color: rgb(0, 0, 0);
+    border: none;
+    font-size: larger;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .compare-button:hover {
+    background-color: #e0ca3b;
+  }
+  
+  @media (max-width: 480px) {
+    .details-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .distance, 
+    .checkbox-container, 
+    .duration {
+      text-align: center;
+    font-size:small;
+
+    }
+  }

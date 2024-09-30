@@ -1,0 +1,221 @@
+.compare-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.compare-content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.compare-box {
+  width: 30%;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto; /* Make the box scrollable */
+}
+
+.service-logo {
+  width: 70px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+.car {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  cursor: pointer;
+}
+
+.car:hover {
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #e0e0e0; /* Highlight selected service */
+}
+
+
+.car.selected {
+  border: 2px solid #000;
+  border-radius: 10px;
+  background-color: #e0e0e0; /* Highlight selected service */
+}
+
+.car-img {
+  width: 50px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.car-details {
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+.service {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.details {
+  font-size: 0.9em;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.time, .fare {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.Book {
+  align-self: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid black;
+  background-color: white;
+  color: #000000;
+  cursor: pointer;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  margin-top: 20px;
+  width: 20%;
+  transition: background-color 0.3s ease;
+}
+
+.Book:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.Book:hover:not(:disabled) {
+  background-color: #000000;
+  color: white;
+}
+
+.rapido-logo {
+  width: 65px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+  margin-top: -10px;
+}
+
+.compare-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.compare-content {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.compare-box {
+  width: 30%;
+}
+
+
+
+.car.selected {
+  background-color: #f0f0f0;
+}
+
+.car-details {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.button-container {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.book,
+.cancel {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.book {
+  background-color: #4CAF50;
+  color: white;
+  font-size: larger;
+}
+
+.book:disabled {
+  background-color: #cccccc;
+  color: #000;
+}
+
+.cancel {
+  background-color: #f44336;
+  font-size: larger;
+
+  color: white;
+}
+/* Mobile styles */
+@media (max-width: 480px) {
+  .compare-content {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .service-logo{
+    display: none;
+  }
+
+  .compare-box {
+    width: 31%;
+    margin: 4px;
+    text-align: center;
+  }
+
+  .car {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .car-img {
+    margin-bottom: 5px;
+  }
+
+  .car-details {
+    margin-right: 0;
+  }
+
+  .car-details .details {
+    display: none;
+  }
+
+  .car-details .time{
+  }
+
+  .button-container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .book, .cancel {
+    width: 100%;
+  }
+}

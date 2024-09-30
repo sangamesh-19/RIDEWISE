@@ -1,0 +1,173 @@
+/* src/NavBar.css */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%; /* Use 100% width to cover the entire viewport */
+  z-index: 9999;
+}
+
+.navbar-logo {
+  color: white;
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.navbar-list {
+  list-style-type: none;
+  /* display: flex; */
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-item {
+   /* Adjust margin as needed */
+  font-size: larger;
+}
+
+.navbar-link {
+  color: white;
+  text-decoration: none;
+ 
+}
+
+.navbar-link:hover {
+  text-decoration: underline;
+}
+
+.navbar-link .active {
+  font-weight: bold;
+  color: rgb(248, 255, 35);
+}
+
+.navbar-right {
+  margin-left: auto; /* Push items to the right */
+  
+}
+
+
+
+/* src/Home.css */
+.home-container {
+  background-image: url('assets/cab1 (2).jpg'); /* Update with your image path */
+  background-size:cover; /* Cover the entire container */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Don't repeat the image */
+  background-color: rgba(0, 0, 0, 0.6);
+  height: 100vh; /* Ensure it covers the full viewport height */
+  width: 100vw; /* Ensure it covers the full viewport width */
+  display: flex;
+  margin-left: -1%;
+  /* margin-top:-1%; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center; /* Center text */
+  margin: 0; /* Remove any margin */
+}
+
+.home-content {
+  color: rgb(255, 252, 252);
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-top: -30%;
+  overflow-y: hidden;
+}
+
+.justified-text h3 {
+  text-align: center; /* Justify the text within the h3 element */
+  overflow-y: hidden;
+  font-weight: 700;
+  margin: 0 auto;
+  max-width: 900px;
+  color: rgb(182, 115, 26); 
+}
+
+.justified-text h5 {
+  text-align: center; /* Justify the text within the h3 element */
+  overflow-y: hidden;
+  font-style: italic;
+  font-weight: 400;
+  margin: 0 auto;
+  max-width: 900px; /* Optional: control the width for better justification */
+}
+
+@media (max-width: 768px) {
+  .home-content {
+    font-size: 2.2rem; /* Adjust font size for smaller screens */
+    margin-top: -20%; /* Adjust top margin for smaller screens */
+  }
+  .justified-text h3 {
+    font-size: 2rem; /* Adjust font size for smaller screens */
+    max-width: 100%; /* Adjust width for smaller screens */
+  }
+  .justified-text h5 {
+    font-size: 1rem; /* Adjust font size for smaller screens */
+    max-width: 90%; /* Adjust width for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .home-content {
+    font-size: 1.5rem; /* Adjust font size for extra small screens */
+    margin-top: -15%; /* Adjust top margin for extra small screens */
+  }
+  .justified-text h3 {
+    font-size: 1.2rem; /* Adjust font size for extra small screens */
+    max-width: 100%; /* Adjust width for extra small screens */
+  }
+  .justified-text h5 {
+    font-size: 1rem; /* Adjust font size for extra small screens */
+    max-width: 100%; /* Adjust width for extra small screens */
+  }
+}
+
+/*.button {
+  margin-top: 20px; 
+  padding: 40px;
+  background-color: yellow;
+  margin-left: -30%;
+  width: 60%;
+  color: black;
+  font-size: 2.5rem;
+   margin-top: 10%;
+  font-weight: bold;
+}
+
+*/
+
+/* Resetting -ms-high-constrast (if applicable) */
+
+
+
+/* src/pages/MapPage.css */
+.fixed-marker {
+  width: 30px;
+  height: 30px;
+  background-image: url('src/assets/location.png'); /* Replace with the path to your marker icon */
+  background-size: cover;
+  background-position: center;
+}
+
+.marker-icon {
+  width: 30px;
+  height: 30px;
+  background-image: url('src/assets/location.png'); /* Replace with the path to your marker icon */
+  background-size: cover;
+  background-position: center;
+}
+/* styles.css (or your preferred CSS file) */
+
+
+.ant-pagination-item {
+  border-radius: 4px; /* Rounded corners for pagination items */
+  background-color: #d3e137; /* Background color of pagination items */
+  border: 1px solid #d3e137; /* Border color of pagination items */
+  font-size: 18px; /* Font size of pagination items */
+}

@@ -1,0 +1,53 @@
+.about-container{
+    /* width: 100%; */
+    background-color: rgb(213, 236, 209);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; /* Center align text in the column */
+    padding: 20px;
+  }
+  
+  .about-container h1 {
+    padding-top: 4%;
+    padding-bottom: 1%;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: brown;
+  }
+  
+  .about-container p{
+    font-size: 1.5rem;
+    margin: 2;
+    padding: 0;
+  }
+  
+  .cab-user{
+    background-color: rgb(209, 208, 200);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center; /* Center align text in the column */
+  }
+  
+  .row{
+    padding-top: 2%;
+  }
+  
+  .cab-user h1{
+    padding-top: 2%;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: brown;
+  }
+  
+  .col p{
+    max-width: 500px;
+    font-size: 1.5rem;
+    margin: 2;
+  
+  }

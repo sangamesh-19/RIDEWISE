@@ -1,0 +1,39 @@
+
+  /* MapPage.css */
+
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.search-input {
+  width: 75%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.search-button {
+  width: 20%;
+  height: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+  .search-input {
+    width: 60%;
+    font-size: 16px;
+  }
+
+  .search-button {
+    width: 30%;
+    height: 40px;
+    font-size: 16px;
+  }
+}

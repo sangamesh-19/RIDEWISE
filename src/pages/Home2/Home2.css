@@ -1,0 +1,17 @@
+.cabim {
+    display: block; /* Ensure the image is displayed */
+    position: fixed; 
+    margin-top: 21.5%;
+    height: 100%;
+    transform: translateY(-50%); /* Center vertically based on its own height */
+    z-index: 999; 
+    width: 50%; /* Adjust the width to a percentage for responsiveness */
+    max-width: 50%; /* Optional: set a maximum width to prevent excessive size on larger screens */
+}
+
+/* Hide the image on very small screens */
+@media (max-width: 480px) {
+    .cabim {
+        display: none;
+    }
+}
